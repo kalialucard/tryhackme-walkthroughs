@@ -1,47 +1,50 @@
-# TryHackMe Writeups and Walkthroughs
+# TryHackMe Writeups 📝
 
-This repository contains my personal collection of TryHackMe walkthroughs and notes. These writeups document the methodology I used while solving rooms, including enumeration steps, exploitation paths, and remediation insights.
+> Personal writeups for TryHackMe rooms — covering enumeration, exploitation, and privilege escalation techniques.
 
-The purpose of this repository is educational. It is intended to help with learning cybersecurity concepts, improving problem-solving skills, and tracking my progress over time.
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-kalialucard-212C42?logo=tryhackme)](https://tryhackme.com/p/kalialucard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## ⚠️ Disclaimer
+## What This Is
 
-All content in this repository is for educational and defensive security purposes only.  
-Do not use any techniques learned here on systems you do not own or have explicit permission to test.
+A growing collection of step-by-step walkthroughs for TryHackMe rooms. Each writeup documents the full attack chain: recon → enumeration → exploitation → privilege escalation → flags.
 
-## 🧭 Contents
+> **Responsible Disclosure:** These writeups are for educational purposes only. All machines are intentionally vulnerable lab environments provided by TryHackMe.
 
-Writeups included (examples):
+## Rooms Covered
 
-- Agent Sudo  
-- Basic Pentesting  
-- Mr Robot CTF  
-- Unstable Twin  
-- VulnNet: Roasted  
-- Ignite  
-- Mustacchio  
-- Rabit-hole  
-- Archangel  
-- TechSupp0rt1  
-- Valley  
-- UltraTech  
-- Wordpress – CVE-2021-29447  
-- and many more
+| Room | Key Techniques |
+|------|---------------|
+| [0day](0day.md) | Apache Shellshock, kernel exploit |
+| [Agent Sudo](Agent%20Sudo.md) | User-agent enumeration, steganography, CVE sudo bypass |
+| [Anonforce](Anonforce.md) | FTP anonymous login, PGP key cracking |
+| [Anonymous](Anonymous.md) | SMB enumeration, SUID abuse |
+| [Archangel](Archangel.md) | LFI, log poisoning, cron privesc |
+| [Basic Pentesting](Basic%20Pentesting.md) | SMB, SSH brute force, weak credentials |
+| [Crack the Hash](Crack%20the%20hash.md) | Hash identification, hashcat, john |
+| [CyberLens](CyberLens.md) | Apache Tika RCE, Windows privesc |
+| [Cyberheroes](Cyberheroes.md) | Source code review, credential exposure |
+| [Dig Dug](Dig%20Dug.md) | DNS enumeration, zone transfers |
+| [Ghostcat](Ghostcat.md) | CVE-2020-1938, AJP connector exploit |
+| [Hack Smarter Security](Hack%20Smarter%20Security.md) | Windows AD, OSCP-style chain |
+| [Ignite](Ignite.md) | Fuel CMS RCE, default credentials |
+| [Library](Library.md) | Python library hijacking |
+| [Mindgames](Mindgames.md) | Brainfuck decode, OpenSSL privesc |
+| [Mr Robot CTF](Mr%20Robot%20CTF.md) | WordPress, hydra, nmap, SUID |
+| [Mustacchio](Mustacchio.md) | XXE injection, SUID privesc |
+| [Plotted-TMS](Plotted-TMS.md) | SQLi, cron job abuse |
+| [Poster](Poster.md) | PostgreSQL RCE, SUID |
+| _…and more_ | |
 
-Each file is a Markdown walkthrough of a single TryHackMe room.
+## Tools Used
 
-## 🛠 Skills covered
+`nmap` · `gobuster` · `hydra` · `john` / `hashcat` · `netcat` · `burpsuite` · `metasploit` · `linpeas` · `pwncat`
 
-- Information gathering and enumeration  
-- Web application testing  
-- Linux privilege escalation  
-- Windows privilege escalation  
-- Password cracking and hashes  
-- Misconfiguration exploitation  
-- Common CVEs and vulnerabilities  
-- CTF methodology and reporting
+## Screenshot
 
-## 🗂 File naming convention
+<!-- TODO: add a sample terminal output screenshot here -->
+![Sample writeup](docs/screenshot.png)
 
-Each writeup uses the room name exactly as shown on TryHackMe, for example:
+## License
 
+[MIT](LICENSE) © kalialucard
